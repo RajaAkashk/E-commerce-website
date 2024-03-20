@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single-product Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+   
+    <!--**************************************** top header sectiion**************************************************-->
+    <section class=" top-header text   ">
+        <div class="container">
+            <div class="row col-xl-12  ">
+                <div class="left-header p-0 m-0   col-xl-8">
+                
+               <ul class=" float-start ">
+                <li class=" "><a href=""> Account</a>   </li>
+                <li class="  mx-4  "><a href="">Track Order</a>  </li>
+                <li class="  mx-2  "><a href="">Support</a>  </li> 
+               </ul>
+
+            </div>
+            
+                <div class="right-header col-xl-4  float-end">
+                    
+                    <ul class=" float-end " > 
+
+<li class="dropdown float-start mx-4  " >
+    <div class="country-logo float-start mx-2 "><img src="images/country-logo-16x16.png" alt=""> </div>
+    <p class=" dropdown-toggle m-0 " data-bs-toggle="dropdown">
+      Unted State
+      </p> 
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item " href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+</li>
+<li class="dropdown float-start mx-5  " >
+   
+    <p class=" dropdown-toggle m-0 " data-bs-toggle="dropdown">
+       USD
+      </p> 
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item " href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+</li>
+<li class="dropdown float-start mx- " >
+   
+    <p class=" dropdown-toggle m-0 " data-bs-toggle="dropdown">
+     Bangla
+      </p> 
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item " href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+</li>
+
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+
+<!--******************************************** header section**************************************** -->
+    <header  >
+        <div class="container">
+            <div class="row col-xl-12 ">
+                <div class=" col-xl-2 logo float-start"><img src="images/logo-3.svg" alt=""></div>
+            
+
+<form class="search-bar  col-xl-6 float-start  ">
+  
+        <input  class=" search-input  col-xl-5  float-start " type="text" placeholder="Search product...">
+
+  <select class="categories float-start  col-xl-4    ">
+    <option value="option1" selected> All Categories  <i class="fa fa-angle-down" aria-hidden="true"></i>  </option>
+    <option value="option2" >Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+   
+<button type="submit" class="btn primary-bg  col-xl-2  "> Search </button>
+
+</form>
+
+
+<div class="col-xl-2 float-start">
+   
+<div class="social-logos float-start"> 
+   <ul class="d-flex justify-content-between">
+    <li class="mx-3"> 
+        <span class="position-relative">
+            <!-- <i class="fa fa-refresh" aria-hidden="true"></i> -->
+            <img class="social-img1" src="images/126502.png" alt="">
+             <!-- Replace with the desired Bootstrap icon class -->
+            <span class="position-absolute top1 start-100 translate-middle badge rounded-pill primary-bg">
+              5 <!-- Replace with the actual message count -->
+              <span class="visually-hidden"> helooo </span>
+            </span>
+          </span> 
+    </li>
+    <li class="mx-3"> 
+        <span class="position-relative">
+           <i class="fa fa-heart-o" aria-hidden="true"></i> 
+           <!-- <img class="social-img2" src="images/download.png" alt=""> -->
+             <!-- Replace with the desired Bootstrap icon class -->
+            <span class="position-absolute top start-100 translate-middle badge rounded-pill primary-bg">
+              5 <!-- Replace with the actual message count -->
+              <span class="visually-hidden"> helooo </span>
+            </span>
+          </span> 
+    </li>
+    <li class="mx-3"> 
+        <span class="position-relative">
+            <!-- <i class="fa fa-shopping-bag" aria-hidden="true"></i> -->
+            <img class="social-img2" src="images/images.png" alt="">
+             <!-- Replace with the desired Bootstrap icon class -->
+            <span class="position-absolute top1 start-89 translate-middle badge rounded-pill primary-bg">
+              5 <!-- Replace with the actual message count -->
+              <span class="visually-hidden"> helooo </span>
+            </span>
+          </span> 
+    </li>
+    <li class="mx-3"> 
+        <span class="position-relative">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+             <!-- Replace with the desired Bootstrap icon class -->
+            <span class="position-absolute top start-100 translate-middle badge rounded-pill primary-bg">
+              5 <!-- Replace with the actual message count -->
+              <span class="visually-hidden"> helooo </span>
+            </span>
+          </span> 
+    </li>
+   
+   </ul>
+
+    </div>
+</div>
+
+    </div>
+    </header>
+
+
+    <!--***************************************** navigation bar starts here ************************************* -->
+
+<nav class="navbar navbar-expand-sm primary-bg  ">
+    <div class="container ">
+
+      <!-- <a class="navbar-brand" href="#">Dropdown</a> -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse col-xl-12 " id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link categories-dropdown " href="#"> 
+              
+                <i class="fa fa-bars mx-2 " aria-hidden="true"></i>All Categories <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+               
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="index.html"> Homepage </a>
+    <!-- <ul class="dropdown">
+        <li> Home 1 </li>
+        <li> Home 2 </li>
+        <li> Home 3 </li>
+        <li> Home 4 </li>
+      
+    </ul> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Shops  <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+
+            <ul class=" mega-dropdown ">
+
+                <div class="  bg-white d-flex justify-content-between flex-wrap ">
+
+                <div class="  menu1 float-start  "> 
+                <li> <h3> SHOP LIST</h3></li>
+                <li> Home 2 </li>
+                <li> Home 3 </li>
+                <li> Home 4 </li>
+            </div>
+                <div class="  menu1 float-start  "> 
+                <li> <h3> PRODUCT LAYOUTS</h3> </li>
+                <li> Home 2 </li>
+                <li> Home 3 </li>
+                <li> Home 4 </li>
+            </div>
+                <div class="  menu1 float-end   "> 
+                <li> <h3> POLULAR CATEGORY</h3> </li>
+                <li> Home 2 </li>
+                <li> Home 3 </li>
+                <li> Home 4 </li>
+            </div>
+                <div class="   float-start   "> 
+                <img src="images/mega-menu-thumb.jpg" alt="">
+            </div>
+
+        </div>
+            </ul>
+
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Pages  <i class="fa fa-angle-down" aria-hidden="true"></i>   </a>
+
+            <ul class="dropdown2">
+                <li> Home 1 </li>
+                <li> Home 2 </li>
+                <li> Home 3 </li>
+                <li> Home 4 </li>
+              
+            </ul>
+
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#">About  </a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog </a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="contact-page.html">Contact  </a>
+          </li>  
+          
+        
+
+         
+        </ul>
+<button type="button" class="btn btn-dark  float-end"> Become a Sellar <i class="fa fa-angle-right mx-1 " aria-hidden="true"></i></button>
+
+      </div>
+    </div>
+  </nav>
+
+
+<!--******************************************** single product ********************************************************** -->
+
+
+
+<section class="product-view ">
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12 col-12 ">
+        
+        <div class="col-xl-6 col-12 float-start " >
+          
+      <div class="product-img   ">
+
+<div class="img-container  col-xl-12 col-12 ">
+
+<div >
+<p class="discount-badge"> -50% </p>
+</div>
+
+<img id="imageBox" src="images/product-details-1 (1).png" alt="">
+
+</div>
+
+
+<div class="product-small-img">
+
+<div class="small-img ">  <img src="images/product-details-1 (1).png" alt="" onclick="myFunction(this)" > </div>
+<div class="small-img ">  <img src="images/product-details-2 (1).png" alt="" onclick="myFunction(this)" > </div>
+<div class="small-img ">  <img src="images/product-details-3 (1).png" alt="" onclick="myFunction(this)" > </div>
+<div class="small-img ">  <img src="images/product-details-4 (1).png" alt="" onclick="myFunction(this)" > </div>
+<div class="small-img ">  <img src="images/product-details-5 (1).png" alt="" onclick="myFunction(this)" > </div>
+
+</div>
+
+      </div>  
+
+        </div>
+
+
+        <div class="col-xl-6 float-end" >
+            
+<div class="product-description">
+  <div class="float-end  ">
+    <p>MOBILE PHONES</p>
+    <h3> Samsung Galaxy Z Fold3 5G 3 colors in 512GB</h3>
+    
+        <p  class=" rating">
+        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+6 Reviews
+</p>
+ 
+<div class="price2 float-start mx-2   ">
+    <p class="original-price   ">$9.99</p>
+    <p class="discounted-price   ">$6.99</p>
+  </div>
+
+  <p class=" text ">
+    It is a long established fact that a reader will be distracted by the readable there content of a page when looking at its layout.
+  </p>
+</div>
+
+  <!-- <div class="color ">
+    <p>COLOR</p>
+  </div> -->
+
+  <div class=" size col-xl-12  ">
+
+    <p> Size </p>
+
+
+  <form action="" >
+
+
+<div class="select-container  ">
+  <select class="col-xl-12 ">
+    <option value="option1">Small</option>
+    <option value="option2">Medium</option>
+    <option value="option3">Large</option>
+    <option value="option4">Extra Large </option>
+  </select>
+  <div class="additional-text">  3"D x 3"W x 3"H </div>
+</div>
+
+<div class=" heart-box   ">
+
+<input type="number " placeholder="   1 ">
+
+<div class="heart ">
+<img src="images/download.png" alt="">
+</div>
+
+<button type="submit" class="btn add-cart-btn  col-xl-7 "> Add to cart</button>
+</div>
+
+
+  </form>
+
+
+
+</div>
+
+  <div >
+  <div class=" tags ">
+
+ <p>     Category :  <span> Kitchen</span> </p>
+
+ <p>     Tags :  <span> Beer, Foamer </span></p>
+    
+ <p>     SKU:  <span> KE-91039</span> </p>
+
+    </div>
+
+   
+  
+
+<div class="report">
+    <i class="fa fa-flag" aria-hidden="true"></i> <b>Report This Item</b>
+</div>
+
+<div class="share  col-xl-12  ">
+  
+  Share This  
+<a href="# ">   <img src="images/facxebvook.png " alt=""></a>
+<a href="# ">  <img src="images/pinterrest.png " alt=""></a>
+<a href="# ">  <img src="images/twittert.png " alt=""></a>
+
+
+</div>
+</div>  
+          </div>
+
+
+       </div>
+  </div>
+</div>
+</section>
+
+
+<!--************************************** Toggleable / Dynamic Tabs**************************************** -->
+
+<section class="toggle-nav  " >
+<div class="container">
+
+<div class="tab-box">
+
+<button type="button" class="tab-btn active ">  Description </button>
+<button type="button" class="tab-btn">   Reviews </button>
+<button type="button" class="tab-btn">  Seller Info </button>
+<!-- <button type="button" class="tab-btn">  contact us  </button> -->
+
+<div class="line"> </div>
+</div>
+
+<div class="content-box">
+  <div class="content  Description-content   ">
+
+
+    <h2>Introduction</h2>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.
+    </p>
+
+    <h2>Features :</h2>
+<ul>
+
+  <li>slim body with metal cover  </li>
+  <li>latest Intel Core i5-1135G7 processor (4 cores / 8 threads)  </li>
+  <li> 8GB DDR4 RAM and fast 512GB PCIe SSD </li>
+  <li> NVIDIA GeForce MX350 2GB GDDR5 graphics card backlit keyboard, touchpad with gesture support </li>
+  
+
+</ul>
+
+  </div>
+
+
+
+
+
+
+  <div class="content review-content  ">
+
+<div class="reviews   ">
+  <h2>Reviews</h2>
+   
+  <div class="user-review bg-white  ">
+
+<div class="user-info pt-3 ">
+  <div class="user-img">
+    <img src="images/raja akash.jpg" alt="">
+  </div>
+
+  <div class="user-details">
+    <div class="user-name">
+      <h6>Raja Akash</h6>
+      <p>New Delhi, India</p>
+    </div>
+
+    <!-- Move the stars div here -->
+    <div class="stars">
+   
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      (5.0)
+    </div>
+  </div>
+</div>
+
+<!-- Continue with your existing structure -->
+<p class="comment  pb-4 "  >
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the redi 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining
+</p>
+
+
+
+
+
+<div class="container px-xl-5 pt-xl-3 " >
+
+  <div class="user-info ">
+    <div class="user-img">
+      <img src="images/raja akash.jpg" alt="">
+    </div>
+  
+    <div class="user-details">
+      <div class="user-name">
+        <h6>Raja Akash</h6>
+        <p>New Delhi, India</p>
+      </div>
+  
+    </div>
+  </div>
+  
+  <!-- Continue with your existing structure -->
+  <p class="comment2"  >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the redi 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining
+  </p>
+  
+  
+
+      </div>
+
+
+      
+
+  </div>
+
+  <div class="user-review bg-white my-4  ">
+  <div class="user-info pt-3 ">
+    <div class="user-img">
+      <img src="images/raja akash.jpg" alt="">
+    </div>
+  
+    <div class="user-details">
+      <div class="user-name">
+        <h6>Raja Akash</h6>
+        <p>New Delhi, India</p>
+      </div>
+  
+      <!-- Move the stars div here -->
+      <div class="stars">
+     
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (5.0)
+      </div>
+    </div>
+  </div>
+  <p class="comment2"  >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the redi 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining
+  </p>
+  
+
+  </div>
+
+</div>
+
+
+<button type="button" class="load-btn   ">Load More</button>
+
+
+
+
+<div class="reviews-form ">
+
+  <div>
+    <h4> Write Your Reviews</h4>
+
+    <div class="stars ">
+     
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      (5.0)
+    </div>  
+  </div>
+
+
+<form action=""  method="post" id="validateform" class="col-xl-12  ">
+
+  <div class="col-xl-4 float-start  ">
+<label for="">Name*</label> <br>
+<input type="text" id="name" name="name" >
+</div>
+
+  <div class="col-xl-4 float-start  ">
+<label for="">Email*</label><br>
+<input type="email" id="email" name="email"  >
+</div>
+
+  <div class="col-xl-4  float-start ">
+<label for="">Phone Number*</label><br>
+<input type="number"id="phone" name="phone"  >
+</div>
+
+<div class="">
+
+  <label for="">Message*</label>
+  <textarea class=" my-2 " name="" id=""  rows="5" id="message" name="message"  ></textarea>
+</div>
+
+
+
+<button type="submit" class="load-btn   ">Submit Review </button>
+
+</form>
+
+
+</div>
+   
+  </div>
+
+
+
+
+
+  <div class="content  seller-info active">
+
+<div class="col-xl-12  ">
+
+<div class="col-xl-4  mt-3  float-start "> 
+ <div class="seller-img">
+  <img src="images/raja akash.jpg" alt="">
+ </div> 
+<div class="seller-name">
+  <h5>Raja Akash</h5>
+  <p>
+    New Delhi, India 
+  </p>
+  <div class="stars "> 
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    (5.0)
+  </div>  
+</div>
+</div>
+
+
+<div class="col-xl-4 seller-products  "> 
+<div class="">
+<p> <h6>Products: </h6> <span> 120 </span> </p>
+<p> <h6>Category:  </h6> <span> Mobile Phone, Sports, Gaming, Electronics  </span> </p>
+<p> <h6>Tags: </h6> <span>Beer, Foamer  </span> </p>
+</div>
+</div>
+
+
+<div class="col-xl-4 seller-products  "> 
+<div class="">
+<p> <h6>Products: </h6> <span> 120 </span> </p>
+<p> <h6>Category:  </h6> <span> Mobile Phone, Sports, Gaming, Electronics  </span> </p>
+<p> <h6>Tags: </h6> <span>Beer, Foamer  </span> </p>
+</div>
+</div>
+
+
+</div>
+
+
+
+<section class="new-arrivals bg-grey ">
+  <div class="container">
+    <div class="row d-flex justify-content-around  ">
+      
+<div class="col-xl-12 mb-2 mt-5  ">
+  <h5 class="float-start font">Product From Shop </h5>
+  <p class="float-end font"> <span>View More</span> <img class="arrow-img" src="images/arrowright.png" alt=""></p>
+</div>
+
+
+
+
+
+<div class="col-xl-3  col-md-6 ">
+  <div class=" card1  bg-white"> 
+  <div class=" btn-box col-xl-12   ">
+    <!-- <button type="button " class="card-button float-end text-white bg-orange  " > </button> -->
+  </div>  
+   <div class="card-img">
+      <img src="images/product-img-1.jpg" alt="">
+    </div>
+    <div class="card-icons float-end">
+      <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+      <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+      </div>
+    <div class="card-text">
+    <div class="stars float-start  mx-2  ">
+      <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </div>
+    <div class="card-heading float-start mx-2  ">
+      <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+    </div>
+    <div class="price float-start mx-2 ">
+      <p class="original-price float-start   ">$4500</p>
+      <p class="discounted-price text-danger float-start ">$4500</p>
+    </div>
+    <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+    </div>
+    </div>
+    </div>
+
+
+
+    <div class="col-xl-3  col-md-6  ">
+      <div class=" card1  bg-white">   
+      <div class=" btn-box col-xl-12  ">
+        <button type="button " class="card-button float-end text-white " >popular  </button>
+      </div>  
+        <div class="card-img">
+          <img src="images/product-img-1.jpg" alt="">
+        </div>
+    
+        <div class="card-icons float-end">
+          <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+          <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+          </div>
+    
+        <div class="card-text">
+        <div class="stars float-start  mx-2  ">
+          <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </div>
+        <div class="card-heading float-start mx-2  ">
+          <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+        </div>
+        <div class="price float-start mx-2 ">
+          <p class="original-price float-start   ">$4500</p>
+          <p class="discounted-price text-danger float-start ">$4500</p>
+        </div>
+        <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+        </div>
+    
+    
+        </div>
+        </div>
+    
+
+
+
+        <div class="col-xl-3  col-md-6  ">
+          <div class=" card1  bg-white">   
+          <div class=" btn-box col-xl-12  ">
+            <button type="button " class="card-button float-end text-white " >popular  </button>
+          </div>  
+            <div class="card-img">
+              <img src="images/product-img-1.jpg" alt="">
+            </div>
+        
+            <div class="card-icons float-end">
+              <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+              <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+              </div>
+        
+            <div class="card-text">
+            <div class="stars float-start  mx-2  ">
+              <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+            <div class="card-heading float-start mx-2  ">
+              <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+            </div>
+            <div class="price float-start mx-2 ">
+              <p class="original-price float-start   ">$4500</p>
+              <p class="discounted-price text-danger float-start ">$4500</p>
+            </div>
+            <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+            </div>
+        
+        
+            </div>
+            </div>
+            <div class="col-xl-3  col-md-6  ">
+              <div class=" card1  bg-white">   
+              <div class=" btn-box col-xl-12  ">
+                <button type="button " class="card-button float-end text-white " >popular  </button>
+              </div>  
+                <div class="card-img">
+                  <img src="images/product-img-1.jpg" alt="">
+                </div>
+            
+                <div class="card-icons float-end">
+                  <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+                  <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+                  </div>
+            
+                <div class="card-text">
+                <div class="stars float-start  mx-2  ">
+                  <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                <div class="card-heading float-start mx-2  ">
+                  <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+                </div>
+                <div class="price float-start mx-2 ">
+                  <p class="original-price float-start   ">$4500</p>
+                  <p class="discounted-price text-danger float-start ">$4500</p>
+                </div>
+                <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+                </div>
+            
+            
+                </div>
+                </div>
+        <div class="col-xl-3  col-md-6  ">
+      <div class=" card1  bg-white">   
+      <div class=" btn-box col-xl-12  ">
+        <button type="button " class="card-button float-end text-white " >popular  </button>
+      </div>  
+        <div class="card-img">
+          <img src="images/product-img-1.jpg" alt="">
+        </div>
+    
+        <div class="card-icons float-end">
+          <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+          <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+          </div>
+    
+        <div class="card-text">
+        <div class="stars float-start  mx-2  ">
+          <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </div>
+        <div class="card-heading float-start mx-2  ">
+          <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+        </div>
+        <div class="price float-start mx-2 ">
+          <p class="original-price float-start   ">$4500</p>
+          <p class="discounted-price text-danger float-start ">$4500</p>
+        </div>
+        <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+        </div>
+    
+    
+        </div>
+        </div>
+                
+
+        
+    
+
+
+
+<div class="col-xl-3  col-md-6  ">
+  <div class=" card1  bg-white"> 
+  <div class=" btn-box col-xl-12   ">
+    <button type="button " class="card-button float-end text-white bg-orange  " >new </button>
+  </div>  
+   <div class="card-img">
+      <img src="images/product-img-1.jpg" alt="">
+    </div>
+    <div class="card-icons float-end">
+      <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+      <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+      </div>
+    <div class="card-text">
+    <div class="stars float-start  mx-2  ">
+      <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </div>
+    <div class="card-heading float-start mx-2  ">
+      <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+    </div>
+    <div class="price float-start mx-2 ">
+      <p class="original-price float-start   ">$4500</p>
+      <p class="discounted-price text-danger float-start ">$4500</p>
+    </div>
+    <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="col-xl-3  col-md-6  ">
+      <div class=" card1  bg-white"> 
+      <div class=" btn-box col-xl-12   ">
+        <!-- <button type="button " class="card-button float-end text-white bg-orange  " > </button> -->
+      </div>  
+       <div class="card-img">
+          <img src="images/product-img-1.jpg" alt="">
+        </div>
+        <div class="card-icons float-end">
+          <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+          <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+          </div>
+        <div class="card-text">
+        <div class="stars float-start  mx-2  ">
+          <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </div>
+        <div class="card-heading float-start mx-2  ">
+          <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+        </div>
+        <div class="price float-start mx-2 ">
+          <p class="original-price float-start   ">$4500</p>
+          <p class="discounted-price text-danger float-start ">$4500</p>
+        </div>
+        <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+        </div>
+        </div>
+        </div>
+    
+
+
+    <div class="col-xl-3  col-md-6  ">
+      <div class=" card1  bg-white">   
+      <div class=" btn-box col-xl-12  ">
+        <button type="button " class="card-button float-end text-white " >popular  </button>
+      </div>  
+        <div class="card-img">
+          <img src="images/product-img-1.jpg" alt="">
+        </div>
+    
+        <div class="card-icons float-end">
+          <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+          <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+          </div>
+    
+        <div class="card-text">
+        <div class="stars float-start  mx-2  ">
+          <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </div>
+        <div class="card-heading float-start mx-2  ">
+          <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+        </div>
+        <div class="price float-start mx-2 ">
+          <p class="original-price float-start   ">$4500</p>
+          <p class="discounted-price text-danger float-start ">$4500</p>
+        </div>
+        <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+        </div>
+    
+    
+        </div>
+        </div>
+    
+
+
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!--***************************** related product ************************************-->
+
+<section class="new-arrivals related-product bg-white">
+    <div class="container">
+      <div class="row d-flex justify-content-around  ">
+        
+  <div class="col-xl-12 mb-2  ">
+    <h5 class="float-start font">Related Products</h5>
+    <!-- <p class="float-end font"> <span>View More</span> <img class="arrow-img" src="images/arrowright.png" alt=""></p> -->
+  </div>
+  
+  
+  
+  
+  
+  <div class="col-xl-3">
+    <div class=" card1  bg-white">
+      <button type="button " class="card-button float-end text-white  " > popular </button>
+      <div class="card-img">
+        <img src="images/product-img-1.jpg" alt="">
+      </div>
+      <div class="card-icons float-end">
+        <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+        <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+        </div>
+      <div class="card-text">
+      <div class="stars float-start  mx-2  ">
+        <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      </div>
+      <div class="card-heading float-start mx-2  ">
+        <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+      </div>
+      <div class="price float-start mx-2 ">
+        <p class="original-price float-start   ">$4500</p>
+        <p class="discounted-price text-danger float-start ">$4500</p>
+      </div>
+      <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+      </div>
+      </div>
+      </div>
+  
+
+  <div class="col-xl-3">
+    <div class=" card1  bg-white">
+      <!-- <button type="button " class="card-button float-end text-white bg-orange " >New</button> -->
+      <div class="card-img">
+        <img src="images/product-img-1.jpg" alt="">
+      </div>
+      <div class="card-icons float-end">
+        <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+        <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+        </div>
+      <div class="card-text">
+      <div class="stars float-start  mx-2  ">
+        <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      </div>
+      <div class="card-heading float-start mx-2  ">
+        <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+      </div>
+      <div class="price float-start mx-2 ">
+        <p class="original-price float-start   ">$4500</p>
+        <p class="discounted-price text-danger float-start ">$4500</p>
+      </div>
+      <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+      </div>
+      </div>
+      </div>
+  
+
+  <div class="col-xl-3">
+    <div class=" card1  bg-white">
+      <button type="button " class="card-button float-end text-white bg-orange " >New</button>
+      <div class="card-img">
+        <img src="images/product-img-1.jpg" alt="">
+      </div>
+      <div class="card-icons float-end">
+        <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+        <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+        </div>
+      <div class="card-text">
+      <div class="stars float-start  mx-2  ">
+        <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      </div>
+      <div class="card-heading float-start mx-2  ">
+        <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+      </div>
+      <div class="price float-start mx-2 ">
+        <p class="original-price float-start   ">$4500</p>
+        <p class="discounted-price text-danger float-start ">$4500</p>
+      </div>
+      <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+      </div>
+      </div>
+      </div>
+
+  <div class="col-xl-3">
+    <div class=" card1  bg-white">
+      <button type="button " class="card-button float-end text-white bg-orange " >New</button>
+      <div class="card-img">
+        <img src="images/product-img-1.jpg" alt="">
+      </div>
+      <div class="card-icons float-end">
+        <p class="bg-grey i1 "><i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+        <p class="bg-grey i2 "><img src="images/126502.png" alt=""></p>
+        </div>
+      <div class="card-text">
+      <div class="stars float-start  mx-2  ">
+        <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      </div>
+      <div class="card-heading float-start mx-2  ">
+        <p class=" "> Xoggle aute et pariatur adipisicing nostrud et...</p>
+      </div>
+      <div class="price float-start mx-2 ">
+        <p class="original-price float-start   ">$4500</p>
+        <p class="discounted-price text-danger float-start ">$4500</p>
+      </div>
+      <button type="submit" class="col-xl-9 cart-btn "> <i class="fa fa-shopping-bag mx-1" aria-hidden="true"></i> Add to Cart </button>
+      </div>
+      </div>
+      </div>
+
+
+      </div>
+      </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!--******************************************** page discount banner******************************** -->
+
+<section class=" full-width  discount-banner ">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 discount-text  ">
+ 
+<h3>Get <span >20%</span> Off Discount Coupon</h3>
+<p> by Subscribe our Newsletter</p>
+
+<form action="">
+  <div class=" email-box col-xl-8"> 
+    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    <input type="text" placeholder="EMAIL ADDRESS" >
+  </div>
+    <button type="submit" class="coupan-btn bg-orange col-xl-3 "> Get the Coupon </button>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  
+  <!--**************************************** Footer ************************************************************ -->
+  
+ 
+<footer class=" bg-white ">
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-xl-12 ">
+
+<div class="footer-list  d-flex  flex-wrap  ">
+
+
+  <div class="col-xl-4  col-12 mt-4  float-start ">
+    <h6 class="col-xl-12 col-12  "  >About Us</h6>
+    <p>We know there are a lot of there <br> developers our but we pride <br> into a firm in the industry.</p>
+  </div>
+
+
+      <div class="col-xl-3  col-12 mt-4  float-start "> 
+        <h6 class="col-xl-12 col-12  "  >Feature  </h6>
+           <p>About Us  </p>
+           <p>Terms Condition  </p>
+           <p> Best Products </p>
+      </div>
+      <div class="col-xl-3  col-12 mt-4  float-start "> 
+        <h6 class="col-xl-12 col-12  "  >Feature  </h6>
+           <p>About Us  </p>
+           <p>Terms Condition  </p>
+           <p> Best Products </p>
+      </div>
+      <div class="col-xl-2  col-12 mt-4  float-end "> 
+        <h6 class="col-xl-12 col-12  "  >Feature  </h6>
+           <p>About Us  </p>
+           <p>Terms Condition  </p>
+           <p> Best Products </p>
+      </div>
+
+    </div> 
+
+
+
+
+
+    </div>
+
+<div class="copywrite col-xl-12">
+<div class="col-xl-7  float-start">
+<p> <i class="fa fa-instagram" aria-hidden="true"></i> 
+  <i class="fa fa-facebook" aria-hidden="true"></i>
+  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+    ©2022  All rights reserved</p>
+</div>
+<div class="col-xl-4 float-end">
+  <img src="images/payment-getways.png" alt="">
+</div>
+
+</div>
+
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+  
+  
+  
+  
+  <!-- jquery script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  
+  <!-- jquery form validation -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js "></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+  
+  
+  <!-- script for bootstrap 5 -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>   
+  
+ <script>
+
+function myFunction(smallImg)
+{
+ 
+  var fullImg = document.getElementById("imageBox");
+  fullImg.src= smallImg.src;
+}
+
+ </script> 
+  
+  <script>
+
+const tabs= document.querySelectorAll('.tab-btn');
+const allContent= document.querySelectorAll('.content');
+
+
+tabs.forEach((tab, index)=>{
+tab.addEventListener('click' , (e) => {
+  tabs.forEach(tab=>{tab.classList.remove('active')});
+  tab.classList.add('active');
+
+  var line=document.querySelector('.line');
+line.style.width = e.target.offsetWidth + "px";
+line.style.left = e.target.offsetLeft + "px";
+
+allContent.forEach(content=>{content.classList.remove('active')});
+allContent[index].classList.add('active');
+
+})
+
+})
+
+  </script>
+  
+
+
+  <script type="text/javascript">
+    $.validator.addMethod("alpha", function(value, element) {
+      return this.optional(element) || value == value.match(/^[a-zA-Z\s]+$/);
+    });
+  
+    $('#validateform').validate({
+      onkeyup: false,
+      onfocusout: function (element, event) {
+        this.element(element);
+      },
+      rules: {
+        name: {
+          required: true,
+          lettersonly: true,
+          minlength: 5
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        phone: {
+          required: true,
+          number: true,
+          minlength: 10
+        },
+        subject: {
+          required: true,
+          lettersonly: true,
+          minlength: 4
+        },
+        message: {
+          minlength: 3
+        }
+      },
+      messages: {
+        name: {
+          required: "Please Enter Your Name",
+          lettersonly: "Please enter characters only",
+          minlength: "Name should be at least 3 characters"
+        },
+        email: {
+          required: "Please Enter Your Email",
+          email: "Please enter correct email",
+        },
+        phone: {
+          required: "Please Enter Your Email",
+          number: "Please fill numbers only",
+          minlength: "Number should be at least 10 digits"
+        },
+        subject: {
+          required: "Please Enter Your Subject",
+          lettersonly: "Please enter characters only",
+          minlength: "Subject should be at least 4 characters"
+        },
+        message: {
+          minlength: "Message should be at least 3 characters"
+        }
+      },
+      errorElement: "span",
+      errorClass: "error-message",
+      highlight: function(element, errorClass, validClass) {
+        $(element).addClass(errorClass).removeClass(validClass);
+        $(element.form).find("label[for=" + element.id + "]").addClass(errorClass);
+      },
+      unhighlight: function(element, errorClass, validClass) {
+        $(element).removeClass(errorClass).addClass(validClass);
+        $(element.form).find("label[for=" + element.id + "]").removeClass(errorClass);
+      }
+    });
+  </script>
+  
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+    </body>
+  </html>
